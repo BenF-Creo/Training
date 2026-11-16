@@ -254,7 +254,7 @@ SCREENS.ex=c=>{
   const g=groupOf(w,i), others=g.idx.filter(j=>j!==i), nt=nextTarget(w,i);
   const ntLabel=nt==null?'Back to workout':(nt<=i?'Back to ':'Next: ')+w.slots[nt].g+' · '+nameOf(slotKey(w.id,w.slots[nt]));
   return `${topbar(w.name,`<button class="chip" data-a="swap">Swap</button><button class="chip" data-a="${skipped?'unskip':'skip'}">${skipped?'Undo skip':'Skip'}</button>`)}
-  <div><p class="eyebrow">${slot.g} · ${i+1} of ${w.slots.length}</p><h1 style="font-size:32px">${esc(e.name)}</h1><p class="sub num">${rxLine(slot,k)}</p>${k!==slot.k?`<p class="tiny" style="color:var(--accent);font-weight:600">Swapped in for ${esc(nameOf(slot.k))}</p>`:''}</div>
+  <div><p class="eyebrow">${slot.g} · ${i+1} of ${w.slots.length}</p><h1 style="font-size:32px">${esc(e.name)}</h1><p class="sub num">${rxLine(slot,k)}</p>${k!==slot.k?`<p class="tiny" style="color:var(--accent-ink);font-weight:600">Swapped in for ${esc(nameOf(slot.k))}</p>`:''}</div>
   ${others.length?`<p class="note">${others.length>1?'Circuit':'Superset'} with ${others.map(j=>w.slots[j].g+' '+esc(nameOf(slotKey(w.id,w.slots[j])))).join(' and ')}. Do one set of each back to back, then rest ${mmss(w.slots[g.idx[g.idx.length-1]].rest)}.</p>`:''}
   ${slot.note?`<p class="note">${slot.note}</p>`:''}
   ${skipped?`<div class="card soft"><p><b>Skipped for today.</b> It will be noted in your workout summary.</p><button class="btn ghost small" data-a="unskip">Equipment free? Undo skip</button></div>`:`
