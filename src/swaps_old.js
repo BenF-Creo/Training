@@ -1,0 +1,20 @@
+const SWAPS={
+ chest:{same:['isochest','mtschest','inclinechest','dbbench','inclinedb','smithbench'],similar:['pushup']},
+ shoulder:{same:['isoshoulder','mtsshoulder','smithshoulder','dbshoulder','arnold'],similar:[]},
+ lateral:{same:['machlateral','cablelateral','seatedlateral'],similar:[]},
+ pushdown:{same:['ropepush','barpush','singlepush'],similar:['ohext','ohcable']},
+ plank:{same:['sideplank'],similar:['pallof','cablecrunch','knee','hangknee']},
+ revv:{same:['hacksquat','pendulum'],similar:['legpress','singlelegpress','goblet','splitsquat']},
+ legpress:{same:['singlelegpress','seatedlegpress','linlegpress'],similar:['revv','hacksquat','pendulum','goblet','splitsquat']},
+ goblet:{same:['splitsquat'],similar:['legpress','revv','hacksquat']},
+ rdl:{same:['barbellrdl','smithrdl'],similar:['backext','lyingcurl']},
+ curl:{same:['singlecurl','lyingcurl','singlelyingcurl'],similar:['rdl','backext']},
+ legext:{same:['singleext'],similar:['goblet','legpress','splitsquat']},
+ pallof:{same:[],similar:['plank','sideplank','cablecrunch','knee']},
+ pulldown:{same:['isopull','mtspull','closepull','underpull','singlepull','assistpull'],similar:['dbrow']},
+ platerow:{same:['isorowover','mtsrow','tbar'],similar:['row','machrow','dbrow']},
+ row:{same:['widerow','singlerow','machrow'],similar:['platerow','tbar','dbrow']},
+ fly:{same:['cablefly','dbreversefly'],similar:['facepull']},
+ b21:{same:['bicep','ezcurl','cablecurl','hammer','preacher'],similar:[]},
+ knee:{same:['hangknee'],similar:['plank','sideplank','pallof','cablecrunch']}
+};
